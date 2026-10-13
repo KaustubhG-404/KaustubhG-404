@@ -98,30 +98,33 @@ for date in sorted(days):
 total = int(calendar["totalContributions"])
 
 # Build the SVG dashboard.
+# Build a cleaner, responsive SVG dashboard.
 first_day = min(days)
 last_day = max(days)
 first_monday = first_day - timedelta(days=first_day.weekday())
 week_count = ((last_day - first_monday).days // 7) + 1
 
-cell = 11
-gap = 3
+cell = 12
+gap = 4
 step = cell + gap
 left = 42
-top = 128
-width = max(900, left + week_count * step + 35)
-height = 222
+top = 145
+calendar_height = 7 * step - gap
+width = max(900, left + week_count * step + 28)
+height = top + calendar_height + 42
 
 def esc(value):
     return html.escape(str(value), quote=True)
 
 parts = [
     f'<svg xmlns="http://www.w3.org/2000/svg" '
-    f'width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-    '<rect width="100%" height="100%" rx="12" fill="#0d1117"/>',
-    '<text x="24" y="30" fill="#58a6ff" font-size="19" '
+    f'width="100%" height="auto" viewBox="0 0 {width} {height}" '
+    f'role="img" aria-label="GitHub contribution dashboard">',
+    '<rect width="100%" height="100%" rx="14" fill="#0d1117"/>',
+    '<text x="24" y="32" fill="#58a6ff" font-size="21" '
     'font-family="Arial,sans-serif" font-weight="bold">'
     'GitHub Contribution Dashboard</text>',
-    f'<text x="24" y="51" fill="#8b949e" font-size="11" '
+    f'<text x="24" y="53" fill="#8b949e" font-size="12" '
     f'font-family="Arial,sans-serif">{esc(USERNAME)} · Last 365 days</text>'
 ]
 
@@ -131,36 +134,38 @@ metrics = [
     ("LONGEST STREAK", longest_streak)
 ]
 
-for (label, value), x in zip(metrics, [24, 310, 596]):
+metric_x = [24, width // 3, (width * 2) // 3]
+
+for (label, value), x in zip(metrics, metric_x):
     parts.append(
-        f'<text x="{x}" y="79" fill="#8b949e" font-size="10" '
+        f'<text x="{x}" y="82" fill="#8b949e" font-size="10" '
         f'font-family="Arial,sans-serif">{label}</text>'
     )
     parts.append(
-        f'<text x="{x}" y="106" fill="#3fb950" font-size="22" '
-        f'font-weight="bold" font-family="Arial,sans-serif">{value}</text>'
+        f'<text x="{x}" y="111" fill="#3fb950" font-size="25" '
+        f'font-weight="bold" font-family="Arial,sans-serif">'
+        f'{value}</text>'
     )
 
 parts.append(
-    '<text x="24" y="119" fill="#8b949e" font-size="9" '
-    'font-family="Arial,sans-serif">Contribution calendar</text>'
+    f'<text x="24" y="133" fill="#c9d1d9" font-size="11" '
+    f'font-family="Arial,sans-serif">Contribution activity</text>'
 )
 
-# Month labels
-seen_months = set()
+# Month labels: show each month once, with enough room above the grid.
+last_month = None
 
 for date in sorted(days):
-    if date.day == 1:
+    month_key = (date.year, date.month)
+    if month_key != last_month and date.weekday() == 0:
         week_index = (date - first_monday).days // 7
         x = left + week_index * step
-        label = date.strftime("%b")
-        if label not in seen_months:
-            parts.append(
-                f'<text x="{x}" y="{top - 9}" fill="#8b949e" '
-                f'font-size="10" font-family="Arial,sans-serif">'
-                f'{label}</text>'
-            )
-            seen_months.add(label)
+        parts.append(
+            f'<text x="{x}" y="{top - 9}" fill="#8b949e" '
+            f'font-size="10" font-family="Arial,sans-serif">'
+            f'{date.strftime("%b")}</text>'
+        )
+        last_month = month_key
 
 def contribution_color(count):
     if count == 0:
@@ -173,23 +178,27 @@ def contribution_color(count):
         return "#26a641"
     return "#39d353"
 
-for date, count in days.items():
+# Draw all days in chronological order.
+for date in sorted(days):
+    count = days[date]
     week_index = (date - first_monday).days // 7
-    weekday = date.weekday()  # Monday = 0
+    weekday = date.weekday()
     x = left + week_index * step
     y = top + weekday * step
 
     parts.append(
         f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" '
-        f'rx="2" fill="{contribution_color(count)}">'
+        f'rx="3" fill="{contribution_color(count)}">'
         f'<title>{date.isoformat()}: {count} contributions</title>'
         f'</rect>'
     )
 
+footer_y = height - 13
 parts.append(
-    f'<text x="24" y="{height - 10}" fill="#8b949e" font-size="10" '
-    f'font-family="Arial,sans-serif">Updated {today.isoformat()} · '
-    f'Streaks count consecutive days with contributions.</text>'
+    f'<text x="24" y="{footer_y}" fill="#8b949e" font-size="10" '
+    f'font-family="Arial,sans-serif">'
+    f'Updated {today.isoformat()} · Each square represents one day'
+    f'</text>'
 )
 parts.append("</svg>")
 
