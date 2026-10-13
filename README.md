@@ -93,7 +93,7 @@ A full-stack application for managing rental property listings and property visi
 - Implemented the Property Management Service, including CRUD operations, search/filtering, and MySQL integration.
 - Worked on the Spring AI feature using Spring Boot, ChatClient, and the Google Gemini API.
 
-[Explore my GitHub repositories](https://github.com/KaustubhG-404?tab=repositories)
+[Explore my GitHub repositories]\([https://github.com/KaustubhG-404?tab=repositories](https://github.com/KaustubhG-404?tab=repositories))
 
 ### 💻 LeetCode Solutions
 
@@ -105,7 +105,7 @@ Practising problem-solving and improving programming fundamentals through coding
 - Hashing and frequency counting.
 - Time and space complexity.
 
-[View my LeetCode repository](https://github.com/KaustubhG-404/LeetCode)
+[View my LeetCode repository]\([https://github.com/KaustubhG-404/LeetCode](https://github.com/KaustubhG-404/LeetCode))
 
 ---
 
@@ -122,23 +122,6 @@ Practising problem-solving and improving programming fundamentals through coding
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=KaustubhG-404&theme=tokyo-night&hide_border=true" alt="GitHub Activity Graph"/>
-</p>
-
-<p align="center">
-  <a href="https://github.com/KaustubhG-404">
-    <img
-      src="https://github-readme-activity-graph.vercel.app/graph?username=KaustubhG-404&theme=tokyo-night&hide_border=true"
-      alt="GitHub Activity Graph"
-    />
-  </a>
-</p>
-## 🧩 LeetCode Statistics
-
-<p align="center">
-  <img
-    src="https://YOUR-VERCEL-APP.vercel.app/api/card"
-    alt="LeetCode Stats"
-  />
 </p>
 
 ---
