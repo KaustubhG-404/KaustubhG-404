@@ -95,20 +95,6 @@ A full-stack application for managing rental property listings and property visi
 
 [Explore my GitHub repositories](https://github.com/KaustubhG-404?tab=repositories)
 
-### 🛍️ E-Clothing Web Application
-
-A web application project focused on clothing-related listings and role-based user access.
-
-**Tech Stack:** React · Express.js · MySQL · JavaScript
-
-**Key Areas**
-- Customer and seller registration.
-- Login and user role management.
-- Backend API and database integration.
-- Seller account status handling.
-
-[Explore my GitHub repositories](https://github.com/KaustubhG-404?tab=repositories)
-
 ### 💻 LeetCode Solutions
 
 Practising problem-solving and improving programming fundamentals through coding challenges.
