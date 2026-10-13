@@ -117,15 +117,13 @@ Practising problem-solving and improving programming fundamentals through coding
   <img height="180" src="./profile/top-langs.svg" alt="Most Used Languages"/>
 </p>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=KaustubhG-404&theme=tokyonight&hide_border=true" alt="GitHub Contribution Streak"/>
-</p>
-
-## 📈 GitHub Profile Summary
+## 📈 My GitHub Contribution Dashboard
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KaustubhG-404&theme=github_dark" alt="GitHub Contribution Summary"/>
+  <img src="./profile/contributions.svg" alt="GitHub Contribution Dashboard" width="100%" />
 </p>
+
+
 
 
 ---
