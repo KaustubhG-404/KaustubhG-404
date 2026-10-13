@@ -124,6 +124,23 @@ Practising problem-solving and improving programming fundamentals through coding
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=KaustubhG-404&theme=tokyo-night&hide_border=true" alt="GitHub Activity Graph"/>
 </p>
 
+<p align="center">
+  <a href="https://github.com/KaustubhG-404">
+    <img
+      src="https://github-readme-activity-graph.vercel.app/graph?username=KaustubhG-404&theme=tokyo-night&hide_border=true"
+      alt="GitHub Activity Graph"
+    />
+  </a>
+</p>
+## 🧩 LeetCode Statistics
+
+<p align="center">
+  <img
+    src="https://YOUR-VERCEL-APP.vercel.app/api/card"
+    alt="LeetCode Stats"
+  />
+</p>
+
 ---
 
 ## 🌱 Currently Learning
