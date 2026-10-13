@@ -44,7 +44,7 @@ jobs:
 
       - name: Generate contribution dashboard
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
         run: python scripts/generate_contributions.py
 
       - name: Commit updated cards
