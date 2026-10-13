@@ -28,6 +28,29 @@
 
 ## 🛠️ Languages and Technologies
 
+
+## 🛠️ Languages and Technologies
+
+### Backend Development
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=java,spring,maven,hibernate" alt="Java, Spring, Maven and Hibernate" />
+</p>
+
+### Frontend Development
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react,js,html,css" alt="React, JavaScript, HTML and CSS" />
+</p>
+
+### Database and Tools
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=mysql,git,github,postman,vscode" alt="MySQL, Git, GitHub, Postman and VS Code" />
+</p>
+
+### AI Integration
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=spring,googlecloud" alt="Spring and Google Cloud" />
+</p>
+
 ### Programming Languages
 <p>
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
