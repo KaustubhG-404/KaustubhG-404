@@ -109,20 +109,24 @@ Practising problem-solving and improving programming fundamentals through coding
 
 ---
 
+
 ## 📊 GitHub Statistics
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=KaustubhG-404&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub Stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=KaustubhG-404&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages"/>
+  <img height="180" src="./profile/stats.svg" alt="GitHub Statistics"/>
+  <img height="180" src="./profile/top-langs.svg" alt="Most Used Languages"/>
 </p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=KaustubhG-404&theme=tokyonight&hide_border=true" alt="GitHub Contribution Streak"/>
 </p>
 
+## 📈 GitHub Profile Summary
+
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=KaustubhG-404&theme=tokyo-night&hide_border=true" alt="GitHub Activity Graph"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=KaustubhG-404&theme=github_dark" alt="GitHub Contribution Summary"/>
 </p>
+
 
 ---
 
