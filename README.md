@@ -110,12 +110,7 @@ Practising problem-solving and improving programming fundamentals through coding
 ---
 
 
-## 📊 GitHub Statistics
 
-<p align="center">
-  <img height="180" src="./profile/stats.svg" alt="GitHub Statistics"/>
-  <img height="180" src="./profile/top-langs.svg" alt="Most Used Languages"/>
-</p>
 
 ## 📈 My GitHub Contribution Dashboard
 
